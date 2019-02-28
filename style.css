@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+	text-align: center;
+	font-family: Open sans;
+	background: url('diamonds.png');
+}
+
+h1 {
+	color: white;
+}
+
+.calculator {
+	max-width: 50%;
+	margin-left: 25%;
+}
+
+@media (min-width: 1200px) {
+	.calculator {
+		max-width: 40%;
+		margin-left: 30%;
+	}
+}
+@media (max-width: 550px) {
+	.calculator {
+		max-width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.row {
+	display: flex;
+	border-bottom: 1px solid #989898;
+}
+
+.row:last-child {
+	border: none;
+}
+
+button {
+	width: 25%;
+	height: 70px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	background-color: #FAFAFA;
+	border-left:1px solid #989898;
+}
+
+button:active {
+	background-color: #E6E6E6;
+}
+
+.row button:last-child {
+	border-right: 1px solid #989898;
+}
+
+#display {
+	background-color: lightgray;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 1px solid #989898;
+	height: 70px;
+	width: calc(100% - 22px);	
+	line-height: 70px;
+	font-size: 20px;
+	color: white;
+	padding: 0 10px;
+	opacity: 0.9;
+	display: block;
+	text-align: right;
+}
+
+#calculate {
+	width: 100%;
+	background-color: #9DB8CF;
+	border:1px solid #989898;
+	border-top: none;	
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: white;
+	opacity: 0.9;
+}
